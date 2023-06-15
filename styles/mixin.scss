@@ -1,0 +1,30 @@
+@mixin flexSet($justify-content, $align-items, $flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin boxSet($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+
+@mixin fontSet($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin colorSet($color, $background-color) {
+  color: $color;
+  background-color: $background-color;
+}
+
+@mixin backgroundSet($background-image, $background-size) {
+  background-image: url($background-image);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: $background-size;
+}

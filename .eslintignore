@@ -1,0 +1,8 @@
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+nuxt.config.js
+index.html
