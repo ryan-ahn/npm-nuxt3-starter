@@ -7,6 +7,8 @@
   "parser": "vue-eslint-parser",
   "extends": ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended", "prettier"],
   "rules": {
+    "no-redeclare": "off",
+    "no-import-assign": "off",
     "linebreak-style": 0,
     "func-call-spacing": "off",
     "import/no-cycle": "off",
@@ -95,26 +97,15 @@
     "vue/padding-line-between-blocks": ["error"],
     // setup 구조분해할당 옵션
     "vue/no-setup-props-destructure": ["off"],
+    "vue/no-parsing-error": "error",
     "no-alert": "off",
     "no-shadow": "off",
     "no-spaced-func": "off",
     "no-console": "off",
     "semi-spacing": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/func-call-spacing": ["error"],
     "@typescript-eslint/prefer-as-const": "off",
-    "@typescript-eslint/member-delimiter-style": [
-      "error",
-      {
-        "multiline": {
-          "delimiter": "comma",
-          "requireLast": true
-        },
-        "singleline": {
-          "delimiter": "semi",
-          "requireLast": false
-        }
-      }
-    ],
     "@typescript-eslint/type-annotation-spacing": ["error", { "after": true }],
     // 탭 길이 설정
     "indent": ["error", 2],
