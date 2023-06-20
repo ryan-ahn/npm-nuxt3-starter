@@ -5,9 +5,19 @@
     "node": true
   },
   "parser": "vue-eslint-parser",
-  "extends": ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended", "prettier"],
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
   "rules": {
-    "no-redeclare": "off",
+    "vue/first-attribute-linebreak": [
+      "error",
+      {
+        "singleline": "ignore",
+        "multiline": "below"
+      }
+    ],
     "no-import-assign": "off",
     "linebreak-style": 0,
     "func-call-spacing": "off",
@@ -47,21 +57,8 @@
         "alphabetical": false
       }
     ],
-
     // vue 스크립트 태그 안에 탭 길이 설정
     "vue/script-indent": ["error", 2],
-    // vue 템플릿 태그 안에 탭 길이 설정
-    "vue/html-indent": [
-      "error",
-      2,
-      {
-        "attribute": 1,
-        "baseIndent": 1,
-        "closeBracket": 0,
-        "alignAttributesVertically": true,
-        "ignores": []
-      }
-    ],
     // vue html 태그 어트리부트 존재시 줄바꿈
     "vue/multiline-html-element-content-newline": [
       "error",

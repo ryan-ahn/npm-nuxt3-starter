@@ -7,6 +7,7 @@ module.exports = {
   ],
   rules: {
     indentation: 2,
+    'font-family-no-missing-generic-family-keyword': null,
     'selector-pseudo-element-no-unknown': null,
     'at-rule-no-unknown': null,
     'declaration-empty-line-before': null,
