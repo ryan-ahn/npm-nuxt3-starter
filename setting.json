@@ -1,0 +1,158 @@
+{
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "off",
+  "editor.linkedEditing": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#000000",
+    "activityBar.foreground": "#ffffff",
+    "activityBarBadge.background": "#ffeb77",
+    "statusBar.background": "#000000",
+    "editor.background": "#151515",
+    "panel.background": "#151515",
+    "activityBar.activeBorder": "#ffeb77",
+    "sideBar.background": "#151515",
+    "tab.activeBackground": "#000000",
+    "tab.activeBorder": "#ffeb77",
+    "tab.unfocusedActiveBorder": "#ffffff",
+    "tab.inactiveBackground": "#151515",
+    "editorGroupHeader.tabsBackground": "#101010",
+    "panelTitle.activeBorder": "#ffeb77",
+    "list.inactiveSelectionBackground": "#000000",
+    "sideBarSectionHeader.background": "#151515",
+    "titleBar.activeBackground": "#000000",
+    "titleBar.inactiveBackground": "#202020",
+    "breadcrumb.background": "#151515"
+  },
+  "material-icon-theme.folders.theme": "specific",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "html.format.enable": false,
+  "eslint.format.enable": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "search.exclude": {
+    "**/node_modules": false,
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/coverage": true,
+    "**/build": true,
+    "**/Pods": true,
+    "**/*.xcodeproj": true,
+    "**/*.xcworkspace": true,
+    "**/.meteor": true
+  },
+  "cSpell.userWords": [
+    "signin",
+    "bestcategory",
+    "cannonical",
+    "createlab",
+    "createpost",
+    "deactive",
+    "displayNone",
+    "firestore",
+    "fontsource",
+    "KAKAO",
+    "labdetail",
+    "linebreak",
+    "misu",
+    "mixins",
+    "MODULABS",
+    "modupop",
+    "modupopdetail",
+    "modupoplist",
+    "mypage",
+    "nuxt",
+    "nuxtjs",
+    "opentype",
+    "papershop",
+    "pinia",
+    "popdetail",
+    "postdetail",
+    "Pretendard",
+    "PUDUBOT",
+    "roboto",
+    "stylelint",
+    "Tada",
+    "Torder",
+    "truetype",
+    "vuetify",
+    "vuex",
+    "vuexfire",
+    "editpost"
+  ],
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss", "vue"],
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "react-native-tools.showUserTips": false,
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "eslint.debug": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown"
+  ]
+}
