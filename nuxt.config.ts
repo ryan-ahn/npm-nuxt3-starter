@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url';
 import { META_COMMON } from './common/meta';
 
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt', '@nuxtjs/stylelint-module'],
+  modules: ['@pinia/nuxt', '@nuxtjs/device'],
   devtools: { enabled: true },
   typescript: { strict: true },
   css: ['@styles/global.scss'],
@@ -29,14 +29,6 @@ export default defineNuxtConfig({
     '@utils': fileURLToPath(new URL('./utils/', import.meta.url)),
   },
   app: {
-    // pageTransition: {
-    //   name: 'fade',
-    //   mode: 'out-in',
-    // },
-    // layoutTransition: {
-    //   name: 'layout',
-    //   mode: 'out-in',
-    // },
     head: {
       meta: [
         {

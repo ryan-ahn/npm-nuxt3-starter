@@ -13,8 +13,6 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@apis/*": ["apis/*"],
-      "@assets/*": ["assets/*"],
       "@common/*": ["common/*"],
       "@components/*": ["components/*"],
       "@containers/*": ["containers/*"],
