@@ -1,6 +1,6 @@
 # Boiler Plate for Project Setting
 
-> Nuxt3 프로젝트 시작을 위한 초기 세팅 보일러 플레이트
+> Nuxt3 프로젝트 시작 세팅용 보일러 플레이트
 
 ## Tech Stack
 - Bundler : Vite
