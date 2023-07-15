@@ -16,7 +16,12 @@ $ git clone ryan-ahn/boilerplate-frontend-nuxt3
 $ cd boilerplate-frontend-nuxt3
 $ npm install
 ```
-2. dev server 시작하기
+2. vscode 세팅
+```markdown
+setting.json 파일을 vscode 세팅에 입력
+관련 익스텐션 전부 설치(문서 확인)
+```
+3. dev server 시작하기
 ```
 $ npm run dev
 ```
@@ -25,10 +30,6 @@ $ npm run dev
 - 아토믹 디자인 패턴을 따름
 - Vue3 composition API Setup 문법을 사용함
 - ESLint + StyleLint + Prettier 포메터 조합
-
-## VSCode Setting
-- setting.json 파일을 VSCode 세팅으로 입력
-- 관련 익스텐션 전부 설치
 
 ## Code Structure
 &nbsp;⎣&nbsp;**public** - 컴파일에 사용되지 않는 정적 파일(이미지, 폰트 등) <br/>
