@@ -2,25 +2,33 @@
 
 > Nuxt3 프로젝트 시작 세팅용 보일러 플레이트
 
-## Tech Stack
+## Setting Stack
 - Bundler : Vite
 - SSR : Nuxt3
 - Core : Vue3
 - Store : Pinia
 - Formatter : ESLint + StyleLint + Prettier
 
+## Project Start
+1. clone & dependencies 설치
+```
+$ git clone ryan-ahn/boilerplate-frontend-nuxt3
+$ cd boilerplate-frontend-nuxt3
+$ npm install
+```
+2. dev server 시작하기
+```
+$ npm run dev
+```
+
 ## Code Pattern
 - 아토믹 디자인 패턴을 따름
 - Vue3 composition API Setup 문법을 사용함
 - ESLint + StyleLint + Prettier 포메터 조합
 
-
-
 ## VSCode Setting
 - setting.json 파일을 VSCode 세팅으로 입력
 - 관련 익스텐션 전부 설치
-
-
 
 ## Code Structure
 &nbsp;⎣&nbsp;**public** - 컴파일에 사용되지 않는 정적 파일(이미지, 폰트 등) <br/>
@@ -34,7 +42,6 @@
 &nbsp;⎣&nbsp;**styles** - css셋 모음<br/>
 &nbsp;⎣&nbsp;**utils** - helper, handler 모음<br/>
 &nbsp;⎣&nbsp;**pages** - 페이지 단위의 컴포넌트<br/>
-
 
 ## Setup 문법 구조
 
