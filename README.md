@@ -44,7 +44,7 @@ $ npm run dev
 &nbsp;⎣&nbsp;**utils** - helper, handler 모음<br/>
 &nbsp;⎣&nbsp;**pages** - 페이지 단위의 컴포넌트<br/>
 
-## Setup 문법 구조
+## Use Vue3 Setup
 
 ```vue
 <script setup lang="ts">
@@ -61,4 +61,28 @@ const props = defineProps({
   props
 })
 </script>
+```
+
+## Use CSS Mixin
+
+```scss
+.app {
+  // 플렉스 세트(기준 정렬, 대칭 정렬, 방향)
+  @include flexSet('center', 'center', 'row')
+
+  // 박스 세트(가로, 세로, 라운딩)
+  @include boxSet(00px, 00px, 00px)
+
+  // 컬러 세트(폰트 컬러, 배경 컬러)
+  @include colorSet(#000000, #000000)
+
+  // 배경 세트(이미지, 사이즈)
+  @include backgroundSet('url', 00px)
+
+  // 폰트 세트(폰트 크기, 두께, 줄간격)
+  @include fontSet(00px, 000, 00px);
+
+  // 일립시스 세트(줄수, 줄간격)
+  @include ellipsisSet(0, 00px)
+}
 ```
