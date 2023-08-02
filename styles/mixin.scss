@@ -28,3 +28,14 @@
   background-position: center center;
   background-size: $background-size;
 }
+
+@mixin ellipsisSet($line-cnt, $line-height) {
+  display: -webkit-box;
+  max-height: $line-height * $line-cnt;
+  overflow: hidden;
+  line-height: $line-height;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line-cnt;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
