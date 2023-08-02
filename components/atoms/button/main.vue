@@ -22,15 +22,12 @@ const { type, text, attrDisabled, onClickFunction } = defineProps<IAtomsButtonMa
 <style lang="scss" scoped>
 .button-wrapper {
   @include flexSet(center, center, row);
-  @include boxSet(auto, auto, 40px);
-  padding: 14px 20px;
+  @include boxSet(auto, auto, 30px);
+  padding: 12px 30px;
   cursor: pointer;
   & > p {
     @include fontSet(17px, 600, 22px);
     @include ellipsisSet(1, 22px);
-  }
-  :hover {
-    color: red;
   }
 }
 </style>

@@ -15,6 +15,8 @@ const buttonText = BUTTON_SUB.gnb.text;
 
 <style lang="scss" scoped>
 .nav-wrapper {
+  position: fixed;
+  top: 0;
   @include flexSet(space-between, center, row);
   @include boxSet(100%, 55px, 0px);
   padding: 0 20px;
