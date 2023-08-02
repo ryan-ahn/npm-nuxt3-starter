@@ -10,15 +10,15 @@
 - [x] 🗂️&nbsp;&nbsp;SSR & Page Transition (Nuxt3)
 - [x] 📚&nbsp;&nbsp;Composition API & Setup (Vue3)
 - [x] 🛹&nbsp;&nbsp;Simple Store (Pinia)
-- [x] 🧵&nbsp;&nbsp;Built-in Component & Layout 
+- [x] 🧵&nbsp;&nbsp;Built-in Component & Layout
 - [x] 📘&nbsp;&nbsp;Configure StyleLint
 - [x] 📙&nbsp;&nbsp;Configure ESLint
 - [x] ✨&nbsp;&nbsp;Setting Reset Style
-- [x] ⚡️&nbsp;&nbsp;Setting Mixin Style 
+- [x] ⚡️&nbsp;&nbsp;Setting Mixin Style
 - [x] 📍&nbsp;&nbsp;Absolute path
 - [x] 📱&nbsp;&nbsp;Check Device
 - [x] 📫&nbsp;&nbsp;Page SEO
-- [ ] 🪄&nbsp;&nbsp;Theme Mode 
+- [ ] 🪄&nbsp;&nbsp;Theme Mode
 
 ## Framworks
 - **Bundler** : Vite
