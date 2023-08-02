@@ -43,20 +43,22 @@ const onClickRouteToStack = (path: string) => {
 
 <style lang="scss">
 .page-wrapper {
+  @include flexSet(center, center, column);
   @include boxSet(100%, 100vh, 0px);
   @include colorSet(white, #111111);
-  padding-top: 10%;
 }
 .title-box {
   @include flexSet(center, center, column);
-  gap: 30px;
+  gap: 10px;
   padding: 50px;
   & > h1 {
     @include fontSet(100px, 700, 110px);
     white-space: pre-wrap;
   }
   & > p {
-    @include fontSet(18px, 200, 30px);
+    @include fontSet(16px, 100, 30px);
+    text-align: center;
+    white-space: pre-wrap;
   }
 }
 .button-box {
