@@ -2,7 +2,7 @@
   <div class="nav-wrapper">
     <img src="/logo.png" alt="logo" class="logo-box" />
     <NuxtLink to="/">
-      <AtomsButtonSub type="B" :text="buttonText" />
+      <AtomsButtonSub :text="buttonText" />
     </NuxtLink>
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { BUTTON_SUB } from '@common/button';
 // Variable
-const buttonText = BUTTON_SUB.gnb.A;
+const buttonText = BUTTON_SUB.gnb.text;
 </script>
 
 <style lang="scss" scoped>

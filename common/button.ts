@@ -1,12 +1,12 @@
 export const BUTTON_MAIN = {
   main: {
-    A: '확인',
-    B: '취소',
+    A: { text: '확인' },
+    B: { text: '취소' },
   },
 };
 
 export const BUTTON_SUB = {
   gnb: {
-    A: '홈으로',
+    text: '홈으로',
   },
 };
