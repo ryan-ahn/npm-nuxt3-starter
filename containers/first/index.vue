@@ -16,7 +16,7 @@ const contentTitle = CONTENT_PAGE.fist.title;
 .page-wrapper {
   @include flexSet(center, center, column);
   @include boxSet(100%, 100vh, 0px);
-  @include colorSet(white, #111111);
+  @include colorSet(white, #111);
 }
 .title-box {
   @include flexSet(center, center, column);

@@ -20,7 +20,8 @@ const buttonText = BUTTON_SUB.gnb.text;
   @include flexSet(space-between, center, row);
   @include boxSet(100%, 55px, 0px);
   padding: 0 20px;
-  @include colorSet(white, #111111);
+  border-bottom: 1px solid #333;
+  @include colorSet(white, #111);
 }
 .logo-box {
   @include boxSet(50px, 40px, 0px);
