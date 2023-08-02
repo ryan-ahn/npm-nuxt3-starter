@@ -1,50 +1,63 @@
-# Boiler Plate for Project Setting
+# Nuxt 3 Awesome Starter
 
-> Nuxt3 프로젝트 시작 세팅용 보일러 플레이트
+![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-nuxt3-vite)
 
-## Setting Stack
-- Bundler : Vite
-- SSR : Nuxt3
-- Core : Vue3
-- Store : Pinia
-- Formatter : ESLint + StyleLint + Prettier
+## Features
+- [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Vite) 
+- [x] 📦&nbsp;&nbsp;Typed Programming (Typescript)
+- [x] 🗂️&nbsp;&nbsp;SSR & Page Transition (Nuxt3)
+- [x] 📚&nbsp;&nbsp;Composition API & Setup (Vue3) 
+- [x] 🛹&nbsp;&nbsp;Simple Store (Pinia)
+- [x] 🧵&nbsp;&nbsp;Built-in Component & Layout
+- [x] 📘&nbsp;&nbsp;Configure StyleLint
+- [x] 📕&nbsp;&nbsp;Configure ESLint 
+- [x] ✨&nbsp;&nbsp;Setting Reset Style
+- [x] ⚡️&nbsp;&nbsp;Setting Mixin Style
+- [x] 📍&nbsp;&nbsp;Absolute path
+- [x] 📱&nbsp;&nbsp;Check Device
+- [x] 📫&nbsp;&nbsp;Page SEO
+- [ ] 🪄&nbsp;&nbsp;Theme Mode
 
-## Project Start
-1. clone & dependencies 설치
+## Framworks
+- **Bundler** : Vite
+- **SSR** : Nuxt3
+- **Core** : Vue3
+- **Store** : Pinia
+
+## Code Pattern
+- **public** - 컴파일에 사용되지 않는 정적 파일(이미지, 폰트 등) <br/>
+- **common** - 정적 데이터(텍스트) <br/>
+- **components** - 최소 단위 컴포넌트(atom, molecule, organism) <br/>
+- **containers** - 컨트롤 로직 컴포넌트(template) <br/>
+- **pages** - 페이지 단위의 컴포넌트(page) <br/>
+- **interface** - 객체 타입 지정 <br/>
+- **layouts** - 고정 영역(device단위 또는 gnb,lnb) <br/>
+- **server** - 넉스트의 서버 사이드 컨트롤 <br/>
+- **store** - 전역 관리 스토어<br/>
+- **styles** - css 코드 및 mixin 셋<br/>
+- **utils** - hooks, helper, handler <br/>
+
+
+## Getting Started
+### 1) Installation
 ```
 $ git clone ryan-ahn/boilerplate-frontend-nuxt3
 $ cd boilerplate-frontend-nuxt3
 $ npm install
 ```
-2. vscode 세팅
+### 2) Configuration VSCode
 ```markdown
 setting.json 파일을 vscode 세팅에 입력
 관련 익스텐션 전부 설치(문서 확인)
 ```
-3. dev server 시작하기
+### 3) Run development server
 ```
 $ npm run dev
 ```
 
-## Code Pattern
-- 아토믹 디자인 패턴을 따름
-- Vue3 composition API Setup 문법을 사용함
-- ESLint + StyleLint + Prettier 포메터 조합
-
-## Code Structure
-&nbsp;⎣&nbsp;**public** - 컴파일에 사용되지 않는 정적 파일(이미지, 폰트 등) <br/>
-&nbsp;⎣&nbsp;**common** - 정적 데이터(텍스트)를 넣어두는 곳 <br/>
-&nbsp;⎣&nbsp;**components** - 최소 단위 컴포넌트(비즈니스 로직, 상태값 사용 불가) <br/>
-&nbsp;⎣&nbsp;**containers** - 컨트롤 로직이 존재하는 뷰 컴포넌트, 최소 단위 컴포넌트의 조합으로 만들어진다. <br/>
-&nbsp;⎣&nbsp;**interface** - 객체 타입 지정을 모아두는 공간 <br/>
-&nbsp;⎣&nbsp;**layouts** - 최초 고정 영역(device단위 또는 gnb,lnb로 나눈다) <br/>
-&nbsp;⎣&nbsp;**server** - 넉스트의 서버 사이드를 컨트롤 하는 폴더이다. <br/>
-&nbsp;⎣&nbsp;**store** - pinia store<br/>
-&nbsp;⎣&nbsp;**styles** - css셋 모음<br/>
-&nbsp;⎣&nbsp;**utils** - helper, handler 모음<br/>
-&nbsp;⎣&nbsp;**pages** - 페이지 단위의 컴포넌트<br/>
-
-## Use Vue3 Setup
+## Using with Vue3 Setup
 
 ```vue
 <script setup lang="ts">
@@ -63,7 +76,7 @@ const props = defineProps({
 </script>
 ```
 
-## Use CSS Mixin
+## Using with Mixin
 
 ```scss
 .app {
