@@ -14,7 +14,7 @@
         "multiline": "below"
       }
     ],
-    "no-import-assign": "on",
+    "no-import-assign": "off",
     "linebreak-style": 0,
     "func-call-spacing": "off",
     "import/no-cycle": "off",
