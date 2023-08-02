@@ -1,4 +1,4 @@
-import { TMainButtonAlias, TSubButtonAlias } from './alias';
+import { TMainButtonAlias } from './alias';
 
 export interface IAtomsButtonMainProps {
   type: TMainButtonAlias;
@@ -8,8 +8,5 @@ export interface IAtomsButtonMainProps {
 }
 
 export interface IAtomsButtonSubProps {
-  type: TSubButtonAlias;
   text: string;
-  attrDisabled: boolean;
-  onClickFunction: () => void;
 }

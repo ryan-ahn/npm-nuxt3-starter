@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pre>page layout</pre>
+    <MoleculesNavigatorGnb />
     <slot />
   </div>
 </template>
