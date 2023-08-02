@@ -60,20 +60,33 @@ $ npm run dev
 ## Using with Vue3 Setup
 
 ```vue
+<template>
+  <h1>{{ title }}</h1>
+</template>
+
 <script setup lang="ts">
-// 모듈 가져오기
-import Vue from 'vue'
-
-// 함수형 스크립트 코드
-const sampleFunction = () => {
-  console.log('Hello World!')
-}
-
-// Props 내려받기
-const props = defineProps({
-  props
-})
+// 함수 생성
+const function = () => {console.log('Hello World!')}
+// 프롭스 정의
+const props = defineProps({title})
 </script>
+```
+
+## Using with Store
+
+```vue
+<script setup lang="ts">
+import { storeToRefs } from 'pinia';
+import useDataStore from '@store/useDataStore';
+// 스토어 불러오기
+const store = useDataStore();
+// 구조 분해 할당
+const { data } = storeToRefs(store);
+// 함수 사용
+store.getData()
+</script>
+
+<style lang="scss">
 ```
 
 ## Using with Mixin
