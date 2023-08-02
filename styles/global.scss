@@ -2,12 +2,75 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 900;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Serif KR', serif;
-  word-break: keep-all;
+  color: #252525;
 }
 
 html,
@@ -71,6 +134,8 @@ thead,
 tr,
 th,
 td,
+textarea,
+input,
 article,
 aside,
 canvas,
@@ -95,7 +160,10 @@ video {
   padding: 0;
   margin: 0;
   font: inherit;
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'Pretendard';
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
   vertical-align: baseline;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -104,6 +172,7 @@ video {
   -ms-user-select: none;
   user-select: none;
   border: 0;
+  outline: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -127,6 +196,19 @@ section {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  resize: none;
 }
 
 body {
@@ -134,7 +216,8 @@ body {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -158,8 +241,127 @@ table {
 
 button {
   padding: 0;
-  white-space: nowrap;
+  text-align: start;
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.display-enter-active {
+  transition: opacity 0.4s ease;
+}
+
+.display-enter-from {
+  opacity: 0;
+}
+
+@keyframes skeleton-ui {
+  0% {
+    background-color: rgba(185, 185, 185, 0.15);
+  }
+  50% {
+    background-color: rgba(185, 185, 185, 0.35);
+  }
+  100% {
+    background-color: rgba(185, 185, 185, 0.15);
+  }
+}
+
+@keyframes fold-on {
+  0% {
+    width: 48px;
+  }
+  100% {
+    width: auto;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  50% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-webkit-keyframes slide-up {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes stretch {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dashoffset: -124px;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(0, -80px, 0);
+  }
 }
