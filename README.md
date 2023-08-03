@@ -1,4 +1,4 @@
-# Nuxt 3 Awesome Starter
+# Nuxt3 Awesome Starter
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -6,16 +6,17 @@
 
 ## Features
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Vite)
-- [x] 📦&nbsp;&nbsp;Typed Programming (Typescript)
-- [x] 🗂️&nbsp;&nbsp;SSR & Page Transition (Nuxt3)
+- [x] 🗝️&nbsp;&nbsp;Typed Programming (Typescript)
+- [x] 🧩&nbsp;&nbsp;SSR & Page Transition (Nuxt3)
 - [x] 📚&nbsp;&nbsp;Composition API & Setup (Vue3)
-- [x] 🛹&nbsp;&nbsp;Simple Store (Pinia)
+- [x] 🕋&nbsp;&nbsp;Simple Store (Pinia)
 - [x] 🧵&nbsp;&nbsp;Built-in Component & Layout
+- [x] 🚰&nbsp;&nbsp;Handle Page to Middleware
 - [x] 📘&nbsp;&nbsp;Configure StyleLint
 - [x] 📙&nbsp;&nbsp;Configure ESLint
 - [x] ✨&nbsp;&nbsp;Setting Reset Style
 - [x] ⚡️&nbsp;&nbsp;Setting Mixin Style
-- [x] 📍&nbsp;&nbsp;Absolute path
+- [x] 📍&nbsp;&nbsp;Absolute Path
 - [x] 📱&nbsp;&nbsp;Check Device
 - [x] 📫&nbsp;&nbsp;Page SEO
 - [ ] 🪄&nbsp;&nbsp;Theme Mode
@@ -42,19 +43,19 @@
 
 ## Getting Started
 ### 1) Installation
-```
-$ git clone ryan-ahn/boilerplate-frontend-nuxt3
-$ cd boilerplate-frontend-nuxt3
-$ npm install
+```shell
+git clone ryan-ahn/boilerplate-nuxt3-vite
+cd ryan-ahn/boilerplate-nuxt3-vite
+npm install
 ```
 ### 2) Configuration VSCode
-```markdown
+```shell
 setting.json 파일을 vscode 세팅에 입력
 관련 익스텐션 전부 설치(문서 확인)
 ```
 ### 3) Run development server
-```
-$ npm run dev
+```shell
+npm run dev
 ```
 
 ## Using with Vue3 Setup
