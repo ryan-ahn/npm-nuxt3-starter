@@ -39,3 +39,21 @@
   -webkit-box-orient: vertical;
   word-break: break-all;
 }
+
+@mixin shadowSet($x, $y, $blur, $red, $green, $blue, $opacity) {
+  -moz-filter: drop-shadow(
+    #{$x}px #{$y}px #{$blur}px rgba($red, $green, $blue, $opacity)
+  );
+  -o-filter: drop-shadow(
+    #{$x}px #{$y}px #{$blur}px rgba($red, $green, $blue, $opacity)
+  );
+  -ms-filter: drop-shadow(
+    #{$x}px #{$y}px #{$blur}px rgba($red, $green, $blue, $opacity)
+  );
+  -webkit-filter: drop-shadow(
+    #{$x}px #{$y}px #{$blur}px rgba($red, $green, $blue, $opacity)
+  );
+  filter: drop-shadow(
+    #{$x}px #{$y}px #{$blur}px rgba($red, $green, $blue, $opacity)
+  );
+}
