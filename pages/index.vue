@@ -1,5 +1,5 @@
 <template>
-  <MainContainer />
+  <MainContainer/>
 </template>
 
 <script setup lang="ts">
@@ -9,18 +9,14 @@ import { META_PAGE } from '@common/meta';
 // Meta
 useHead({
   title: META_PAGE.default.page_title,
-  meta: [
-    {
-      name: 'description',
-      content: META_PAGE.default.page_description,
-    },
-  ],
-  link: [
-    {
-      rel: 'canonical',
-      href: META_PAGE.default.page_cannonical_link,
-    },
-  ],
+  meta: [{
+    name: 'description',
+    content: META_PAGE.default.page_description,
+  }],
+  link: [{
+    rel: 'canonical',
+    href: META_PAGE.default.page_cannonical_link,
+  }],
 });
 // Seo Meta
 useSeoMeta({

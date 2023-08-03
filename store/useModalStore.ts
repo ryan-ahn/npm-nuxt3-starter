@@ -4,9 +4,7 @@ import { defineStore } from 'pinia';
 const useDataStore = defineStore('data', () => {
   // State
   const isOpen = ref<boolean>(false);
-  return {
-    isOpen,
-  };
+  return { isOpen };
 });
 
 export default useDataStore;

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <MoleculesNavigatorGnb />
-    <slot />
+    <MoleculesNavigatorGnb/>
+    <slot/>
   </div>
 </template>
 

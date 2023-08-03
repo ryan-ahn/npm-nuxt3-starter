@@ -1,7 +1,6 @@
 module.exports = {
   plugins: ['stylelint-order'],
   extends: [
-    'stylelint-config-prettier-scss',
     'stylelint-config-recommended-scss',
     'stylelint-config-recommended-vue',
   ],
@@ -12,7 +11,10 @@ module.exports = {
     'at-rule-no-unknown': null,
     'declaration-empty-line-before': null,
     'no-descending-specificity': null,
-    'order/order': ['custom-properties', 'declarations'],
+    'order/order': [
+      'custom-properties',
+      'declarations',
+    ],
     'order/properties-order': [
       {
         // Must be first.
@@ -34,7 +36,10 @@ module.exports = {
       },
       {
         // Display mode.
-        properties: ['box-sizing', 'display'],
+        properties: [
+          'box-sizing',
+          'display',
+        ],
       },
       {
         // Flexible boxes.
@@ -73,7 +78,11 @@ module.exports = {
       },
       {
         // Gap.
-        properties: ['gap', 'row-gap', 'column-gap'],
+        properties: [
+          'gap',
+          'row-gap',
+          'column-gap',
+        ],
       },
       {
         // Layout alignment.

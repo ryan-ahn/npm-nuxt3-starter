@@ -1,8 +1,8 @@
 <template>
   <div class="nav-wrapper">
-    <img src="/logo.png" alt="logo" class="logo-box" />
+    <img src="/logo.png" alt="logo" class="logo-box">
     <NuxtLink to="/">
-      <AtomsButtonSub :text="buttonText" />
+      <AtomsButtonSub :text="buttonText"/>
     </NuxtLink>
   </div>
 </template>

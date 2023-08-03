@@ -1,5 +1,5 @@
 <template>
-  <FirstContainer />
+  <FirstContainer/>
 </template>
 
 <script setup lang="ts">
@@ -9,18 +9,14 @@ import { META_PAGE } from '@common/meta';
 // Meta
 useHead({
   title: META_PAGE.firstPage.page_title,
-  meta: [
-    {
-      name: 'description',
-      content: META_PAGE.firstPage.page_description,
-    },
-  ],
-  link: [
-    {
-      rel: 'canonical',
-      href: META_PAGE.firstPage.page_cannonical_link,
-    },
-  ],
+  meta: [{
+    name: 'description',
+    content: META_PAGE.firstPage.page_description,
+  }],
+  link: [{
+    rel: 'canonical',
+    href: META_PAGE.firstPage.page_cannonical_link,
+  }],
 });
 // Seo Meta
 useSeoMeta({
@@ -32,7 +28,5 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 });
 // Layout
-definePageMeta({
-  layout: 'default',
-});
+definePageMeta({ layout: 'default' });
 </script>

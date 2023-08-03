@@ -9,14 +9,21 @@
     :disabled="attrDisabled"
     @click="onClickFunction"
   >
-    <p :style="{ color: type === 'A' ? 'white' : '#252525' }">{{ text }}</p>
+    <p :style="{ color: type === 'A' ? 'white' : '#252525' }">
+      {{ text }}
+    </p>
   </button>
 </template>
 
 <script setup lang="ts">
 import { IAtomsButtonMainProps } from '@interface/props';
 // Props
-const { type, text, attrDisabled, onClickFunction } = defineProps<IAtomsButtonMainProps>();
+const {
+  type,
+  text,
+  attrDisabled,
+  onClickFunction,
+} = defineProps<IAtomsButtonMainProps>();
 </script>
 
 <style lang="scss" scoped>
