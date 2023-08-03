@@ -1,15 +1,23 @@
 import { fileURLToPath } from 'node:url';
-import { META_COMMON } from './common/meta';
 
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt', '@nuxtjs/device'],
-  devtools: { enabled: true },
-  typescript: { strict: true },
+  modules: [
+    '@pinia/nuxt',
+    '@nuxtjs/device',
+  ],
+  devtools: {
+    enabled: true,
+  },
+  typescript: {
+    strict: true,
+  },
   css: ['@styles/global.scss'],
   vite: {
     css: {
       preprocessorOptions: {
-        scss: { additionalData: '@use "./styles/mixin.scss" as *;' },
+        scss: {
+          additionalData: '@use "./styles/mixin.scss" as *;',
+        },
       },
     },
   },
@@ -41,7 +49,7 @@ export default defineNuxtConfig({
         },
         {
           name: 'keyword',
-          content: META_COMMON.site_keyword,
+          content: 'keyword',
         },
       ],
       link: [

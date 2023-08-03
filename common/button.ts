@@ -13,4 +13,8 @@ export const BUTTON_MAIN = {
   },
 };
 
-export const BUTTON_SUB = { gnb: { text: '홈으로' } };
+export const BUTTON_SUB = {
+  gnb: {
+    text: '홈으로',
+  },
+};

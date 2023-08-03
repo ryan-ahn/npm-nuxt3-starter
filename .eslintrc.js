@@ -11,7 +11,9 @@ module.exports = {
     '@vue/airbnb',
     '@vue/typescript/recommended',
   ],
-  parserOptions: { ecmaVersion: 2020 },
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
   rules: {
     // off
     'no-alert': 'off',
@@ -57,7 +59,9 @@ module.exports = {
     // 타입스크립트 콜론 뒤 스페이스 룰
     '@typescript-eslint/type-annotation-spacing': [
       'error',
-      { after: true },
+      {
+        after: true,
+      },
     ],
     // 컴포넌트 이름 2개 단어 미적용 룰
     'vue/multi-word-component-names': 'off',
@@ -141,7 +145,9 @@ module.exports = {
     'vue/html-self-closing': [
       'error',
       {
-        html: { component: 'always' },
+        html: {
+          component: 'always',
+        },
         svg: 'always',
         math: 'always',
       },
@@ -187,12 +193,16 @@ module.exports = {
     // import 2개 이상시 줄바꿈 처리
     'newline/import-module': [
       'error',
-      { minItems: 2 },
+      {
+        minItems: 2,
+      },
     ],
     // 객체 구조분해할당 프로퍼티 2개 이상시 줄바꿈 처리
     'newline/object-property': [
       'error',
-      { minItems: 2 },
+      {
+        minItems: 2,
+      },
     ],
 
     // import 순서
@@ -206,7 +216,9 @@ module.exports = {
           'sibling',
           'index',
         ],
-        alphabetize: { order: 'desc' },
+        alphabetize: {
+          order: 'desc',
+        },
       },
     ],
     // 탭 길이 설정
@@ -227,17 +239,23 @@ module.exports = {
     ],
     'max-len': [
       'error',
-      { code: 200 },
+      {
+        code: 200,
+      },
     ],
     // 배열이 2개 이상일시 시작 브라켓 줄바꿈
     'array-bracket-newline': [
       'error',
-      { minItems: 2 },
+      {
+        minItems: 2,
+      },
     ],
     // 배열이 2개 이상일시 요소 줄바꿈
     'array-element-newline': [
       'error',
-      { minItems: 2 },
+      {
+        minItems: 2,
+      },
     ],
     // 구조분해할당, 가져오기, 내보내기 프로퍼티 2개 이상일시 멀티라인 적용
     'object-curly-newline': [
@@ -245,7 +263,7 @@ module.exports = {
       {
         ObjectExpression: {
           multiline: true,
-          minProperties: 2,
+          minProperties: 1,
         },
         ObjectPattern: {
           multiline: true,
@@ -264,14 +282,18 @@ module.exports = {
     // 객체 멀티라인 강제 적용
     'object-property-newline': [
       'error',
-      { allowAllPropertiesOnSameLine: false },
+      {
+        allowAllPropertiesOnSameLine: false,
+      },
     ],
 
   },
   overrides: [
     {
       files: ['src/containers/**/*.test.{j,t}s?(x)'],
-      env: { jest: true },
+      env: {
+        jest: true,
+      },
     },
     {
       files: ['src/**/*.vue'],
