@@ -10,8 +10,8 @@
 - [x] 🧩&nbsp;&nbsp;SSR & Page Transition (Nuxt3)
 - [x] 📚&nbsp;&nbsp;Composition API & Setup (Vue3)
 - [x] 🕋&nbsp;&nbsp;Simple Store (Pinia)
-- [x] 📙&nbsp;&nbsp;Powerful Code Rules (ESLint)
-- [x] 📘&nbsp;&nbsp;Powerful CSS Rules (StyleLint)
+- [x] 📙&nbsp;&nbsp;Use Strict Codebase (ESLint)
+- [x] 📘&nbsp;&nbsp;Use Strict Style (StyleLint)
 - [x] 🧵&nbsp;&nbsp;Built-in Component & Layout
 - [x] 🚰&nbsp;&nbsp;Handle Page to Middleware
 - [x] ✨&nbsp;&nbsp;Setting Reset Style
