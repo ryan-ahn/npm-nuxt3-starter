@@ -35,6 +35,7 @@ module.exports = {
     'func-call-spacing': 'off',
     'linebreak-style': 0,
     'vue/no-v-html': 'off',
+    'vue/script-indent': 'off',
     'vue/html-button-has-type': 'off',
     'vuejs-accessibility/click-events-have-key-events': 'off',
     'vuejs-accessibility/form-control-has-label': 'off',
@@ -90,11 +91,6 @@ module.exports = {
         ],
         alphabetical: false,
       },
-    ],
-    // vue 스크립트 태그 안에 탭 길이 설정
-    'vue/script-indent': [
-      'error',
-      2,
     ],
     // vue 템플릿 태그 안에 탭 길이 설정
     'vue/html-indent': [
@@ -291,6 +287,9 @@ module.exports = {
     indent: [
       'error',
       2,
+      {
+        SwitchCase: 1,
+      },
     ],
     'max-len': [
       'error',
