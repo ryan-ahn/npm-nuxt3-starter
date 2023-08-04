@@ -17,7 +17,6 @@ module.exports = {
   rules: {
     // off
     'no-alert': 'off',
-    'no-param-reassign': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-restricted-syntax': 'off',
@@ -34,6 +33,7 @@ module.exports = {
     'prefer-destructuring': 'off',
     'func-call-spacing': 'off',
     'linebreak-style': 0,
+    'vue/no-v-html': 'off',
     'vue/html-button-has-type': 'off',
     'vuejs-accessibility/click-events-have-key-events': 'off',
     'vuejs-accessibility/form-control-has-label': 'off',
@@ -105,6 +105,18 @@ module.exports = {
         closeBracket: 0,
         alignAttributesVertically: true,
         ignores: [],
+      },
+    ],
+    // vue html 태그 어트리부트 갯수에 따라 줄바꿈
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: {
+          max: 1,
+        },
+        multiline: {
+          max: 1,
+        },
       },
     ],
     // vue html 태그 어트리부트 존재시 줄바꿈
