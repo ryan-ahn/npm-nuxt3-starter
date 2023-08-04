@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     'plugin:cypress/recommended',
+    'plugin:vue-scoped-css/vue3-recommended',
     '@vue/airbnb',
     '@vue/typescript/recommended',
   ],
@@ -216,7 +217,6 @@ module.exports = {
         minItems: 2,
       },
     ],
-
     // import 순서
     'import/order': [
       'error',
@@ -231,28 +231,6 @@ module.exports = {
         alphabetize: {
           order: 'desc',
         },
-      },
-    ],
-    // 탭 길이 설정
-    indent: [
-      'error',
-      2,
-    ],
-    // 배열,객체,가져오기,내보내기 멀티라인일시 마지막에 콤마
-    'comma-dangle': [
-      'error',
-      {
-        arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
-        exports: 'always-multiline',
-        functions: 'always-multiline',
-      },
-    ],
-    'max-len': [
-      'error',
-      {
-        code: 200,
       },
     ],
     // 배열이 2개 이상일시 시작 브라켓 줄바꿈
@@ -291,14 +269,35 @@ module.exports = {
         },
       },
     ],
+    // 배열,객체,가져오기,내보내기 멀티라인일시 마지막에 콤마
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'always-multiline',
+      },
+    ],
     // 객체 멀티라인 강제 적용
     'object-property-newline': [
       'error',
       {
-        allowAllPropertiesOnSameLine: false,
+        allowAllPropertiesOnSameLine: true,
       },
     ],
-
+    // 탭 길이 설정
+    indent: [
+      'error',
+      2,
+    ],
+    'max-len': [
+      'error',
+      {
+        code: 200,
+      },
+    ],
   },
   overrides: [
     {
@@ -310,7 +309,7 @@ module.exports = {
     {
       files: ['src/**/*.vue'],
       rules: {
-      // 함수,변수 카멜 케이스 룰 적용
+        // 함수,변수 카멜 케이스 룰 적용
         '@typescript-eslint/naming-convention': [
           'error',
           {
