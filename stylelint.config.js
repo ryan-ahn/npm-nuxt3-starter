@@ -11,6 +11,7 @@ module.exports = {
     'at-rule-no-unknown': null,
     'declaration-empty-line-before': null,
     'no-descending-specificity': null,
+    'declaration-block-trailing-semicolon': 'always',
     'order/order': [
       'custom-properties',
       'declarations',
