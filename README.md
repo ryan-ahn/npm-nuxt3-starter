@@ -28,11 +28,12 @@
 - **Store** : Pinia
 
 ## Code Pattern
-- **public** - 컴파일에 사용되지 않는 정적 파일(이미지, 폰트 등) <br/>
-- **common** - 정적 데이터(텍스트) <br/>
+- **assets** - 정적 데이터(텍스트) <br/>
 - **components** - 최소 단위 컴포넌트(atom, molecule, organism) <br/>
 - **containers** - 컨트롤 로직 컴포넌트(template) <br/>
 - **pages** - 페이지 단위의 컴포넌트(page) <br/>
+- **public** - 정적 데이터 데이터(아이콘, 폰트 등) <br/>
+- **plugins** - 외부, 내부 플러그인 <br/>
 - **interface** - 객체 타입 지정 <br/>
 - **layouts** - 고정 영역(device단위 또는 gnb,lnb) <br/>
 - **server** - 넉스트의 서버 사이드 컨트롤 <br/>
