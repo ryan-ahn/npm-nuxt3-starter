@@ -102,7 +102,7 @@ store.getData()
   @include boxSet(00px, 00px, 00px)
 
   // 컬러 세트(폰트 컬러, 배경 컬러)
-  @include colorSet(#000000, #000000)
+  @include colorSet($white, $black)
 
   // 배경 세트(이미지, 사이즈)
   @include backgroundSet('url', 00px)
@@ -112,5 +112,8 @@ store.getData()
 
   // 일립시스 세트(줄수, 줄간격)
   @include ellipsisSet(0, 00px)
+
+  // 쉐도우 세트(가로, 세로, 블러, 컬러, 투명도)
+  @include shadowSet(0, 0, 0, $white, 0.1)
 }
 ```
