@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import FirstContainer from '@containers/first/index.vue';
-import { META_PAGE } from '@common/meta';
+import { META_PAGE } from '@assets/data/meta';
 
 // Meta
 useHead({
@@ -28,5 +28,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 });
 // Layout
-definePageMeta({ layout: 'default' });
+definePageMeta({
+  layout: 'default',
+});
 </script>

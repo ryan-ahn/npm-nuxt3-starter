@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { BUTTON_SUB } from '@common/button';
+import { BUTTON_SUB } from '@assets/data/button';
 // Variable
 const buttonText = BUTTON_SUB.gnb.text;
 </script>

@@ -13,14 +13,13 @@
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
-      "@common/*": ["common/*"],
+      "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@containers/*": ["containers/*"],
       "@interface/*": ["interface/*"],
       "@layouts/*": ["layouts/*"],
       "@pages/*": ["pages/*"],
       "@plugins/*": ["plugins/*"],
-      "@router/*": ["router/*"],
       "@store/*": ["store/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"]

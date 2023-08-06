@@ -22,8 +22,8 @@
 </template>
 
 <script setup lang="ts">
-import { CONTENT_PAGE } from '@common/content';
-import { BUTTON_MAIN } from '@common/button';
+import { CONTENT_PAGE } from '@assets/data/content';
+import { BUTTON_MAIN } from '@assets/data/button';
 // Hooks
 const router = useRouter();
 // variable

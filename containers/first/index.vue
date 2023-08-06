@@ -7,12 +7,12 @@
 </template>
 
 <script setup lang="ts">
-import { CONTENT_PAGE } from '@common/content';
+import { CONTENT_PAGE } from '@assets/data/content';
 // variable
 const contentTitle = CONTENT_PAGE.fist.title;
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page-wrapper {
   @include flexSet(center, center, column);
   @include boxSet(100%, 100vh, 0px);
