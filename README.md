@@ -59,7 +59,7 @@ setting.json 파일을 vscode 세팅에 입력
 npm run dev
 ```
 
-## Using with Vue3 Setup
+## Using with Vue3 Script Setup
 
 ```vue
 <template>
