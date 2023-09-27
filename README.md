@@ -1,4 +1,4 @@
-# Nuxt3 Awesome Starter
+# Ryan's Nuxt3 Awesome Starter
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -19,7 +19,7 @@
 - [x] 📍&nbsp;&nbsp;Absolute Path
 - [x] 📱&nbsp;&nbsp;Check Device
 - [x] 📫&nbsp;&nbsp;Page SEO
-- [ ] 🪄&nbsp;&nbsp;Theme Mode
+- [ ] 🪄&nbsp;&nbsp;Dark Mode
 
 ## Framworks
 - **Bundler** : Vite
@@ -82,9 +82,9 @@ import { storeToRefs } from 'pinia';
 import useDataStore from '@store/useDataStore';
 // 스토어 불러오기
 const store = useDataStore();
-// 구조 분해 할당
+// 구조 분해 할당 사용하기
 const { data } = storeToRefs(store);
-// 함수 사용
+// 함수 사용하기
 store.getData()
 </script>
 
