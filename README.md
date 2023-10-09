@@ -45,8 +45,8 @@
 ## Getting Started
 ### 1) Installation
 ```shell
-git clone ryan-ahn/boilerplate-nuxt3-vite
-cd ryan-ahn/boilerplate-nuxt3-vite
+git clone ryan-ahn/boilerplate-nuxt3-view
+cd ryan-ahn/boilerplate-nuxt3-view
 npm install
 ```
 ### 2) Configuration VSCode
