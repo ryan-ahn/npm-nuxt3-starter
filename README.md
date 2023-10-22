@@ -2,7 +2,7 @@
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-nuxt3-vite)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-nuxt3-view)
 
 ## Features
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Vite)
