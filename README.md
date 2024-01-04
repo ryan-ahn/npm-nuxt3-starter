@@ -46,7 +46,7 @@
 ### 1) Installation
 ```shell
 git clone ryan-ahn/boilerplate-nuxt3-client
-cd ryan-ahn/boilerplate-nuxt3-view
+cd ryan-ahn/boilerplate-nuxt3-client
 npm install
 ```
 ### 2) Configuration VSCode
