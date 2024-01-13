@@ -21,7 +21,7 @@
 - [x] 📫&nbsp;&nbsp;Page SEO
 - [ ] 🪄&nbsp;&nbsp;Dark Mode
 
-## Framworks
+## Frameworks
 - **Bundler** : Vite
 - **SSR** : Nuxt3
 - **Core** : Vue3
