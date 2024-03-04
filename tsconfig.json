@@ -10,19 +10,41 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@containers/*": ["containers/*"],
-      "@interface/*": ["interface/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
-      "@plugins/*": ["plugins/*"],
-      "@store/*": ["store/*"],
-      "@styles/*": ["styles/*"],
-      "@utils/*": ["utils/*"]
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@containers/*": [
+        "containers/*"
+      ],
+      "@interface/*": [
+        "interface/*"
+      ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@plugins/*": [
+        "plugins/*"
+      ],
+      "@store/*": [
+        "store/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
     }
   },
   "extends": "./.nuxt/tsconfig.json"
