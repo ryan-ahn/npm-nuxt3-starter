@@ -1,0 +1,8 @@
+.idea
+.nuxt
+.tscache
+.DS_Store
+.git
+.gitignore
+node_modules/
+package-lock.json
