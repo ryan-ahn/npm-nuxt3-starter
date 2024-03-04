@@ -47,7 +47,6 @@
 ```shell
 npx nuxt3-starter my-project
 cd my-project
-npm install
 ```
 ### 2) Run Project
 ```shell
