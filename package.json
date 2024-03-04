@@ -1,12 +1,29 @@
 {
-  "name": "nuxt3-ryan",
-  "private": true,
+  "name": "nuxt3-starter",
   "author": {
-    "name": "github.com/ryan-ahn"
+    "name": "ryan-ahn",
+    "email": "kaaiinn4@gmail.com",
+    "url": "https://github.com/ryan-ahn"
   },
+  "license": "MIT",
+  "description": "Start a Nuxt3 Pinia Typescript project in few second!",
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "vue",
+    "vue3",
+    "typescript",
+    "pinia",
+    "eslint",
+    "stylelint",
+    "boilerplate"
+  ],
+  "version": "1.0.1",
+  "bin": "./bin/npm.js",
   "engines": {
-    "node": "16.15.0"
+    "node": "18.18.2"
   },
+  "private": false,
   "scripts": {
     "start": "nuxt start",
     "build": "nuxt build",
