@@ -5,6 +5,11 @@
     "email": "kaaiinn4@gmail.com",
     "url": "https://github.com/ryan-ahn"
   },
+  "homepage": "https://github.com/ryan-ahn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryan-ahn/npm-nuxt3-starter.git"
+  },
   "license": "MIT",
   "description": "Start a Nuxt3 Pinia Typescript project in few second!",
   "keywords": [
@@ -18,7 +23,7 @@
     "stylelint",
     "boilerplate"
   ],
-  "version": "1.0.11",
+  "version": "1.0.12",
   "type": "module",
   "bin": "./bin/npm.js",
   "private": false,

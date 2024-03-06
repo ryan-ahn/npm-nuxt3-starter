@@ -1,8 +1,10 @@
 # Ryan's Nuxt3 Awesome Starter
 
+
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/npm-nuxt3-starter)
+
 
 ## Features
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Vite)
@@ -21,11 +23,13 @@
 - [x] 📫&nbsp;&nbsp;Page SEO
 - [ ] 🪄&nbsp;&nbsp;Dark Mode
 
+
 ## Frameworks
 - **Bundler** : Vite
 - **SSR** : Nuxt3
 - **Core** : Vue3
 - **Store** : Pinia
+
 
 ## Code Pattern
 - **assets** - static resource <br/>
@@ -57,6 +61,7 @@ npm run dev
 npm run build
 ```
 
+
 ## Using with Vue3 Script Setup
 ```vue
 <template>
@@ -71,6 +76,7 @@ const props = defineProps({title})
 </script>
 ```
 
+
 ## Using with Store
 ```vue
 <script setup lang="ts">
@@ -84,6 +90,7 @@ const { data } = storeToRefs(store);
 store.getData()
 </script>
 ```
+
 
 ## Using with Mixin
 
