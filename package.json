@@ -23,7 +23,7 @@
     "stylelint",
     "boilerplate"
   ],
-  "version": "1.0.12",
+  "version": "1.0.13",
   "type": "module",
   "bin": "./bin/npm.js",
   "private": false,

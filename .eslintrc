@@ -1,0 +1,312 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "vue/setup-compiler-macros": true
+  },
+  "plugins": [
+    "newline"
+  ],
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "plugin:cypress/recommended",
+    "plugin:vue-scoped-css/vue3-recommended",
+    "@vue/airbnb",
+    "@vue/typescript/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "no-alert": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+    "no-restricted-syntax": "off",
+    "no-use-before-define": "off",
+    "no-spaced-func": "off",
+    "no-shadow": "off",
+    "no-plusplus": "off",
+    "no-underscore-dangle": "off",
+    "import/no-unresolved": "off",
+    "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "implicit-arrow-linebreak": "off",
+    "prefer-destructuring": "off",
+    "func-call-spacing": "off",
+    "linebreak-style": 0,
+    "vue/no-v-html": "off",
+    "vue/script-indent": "off",
+    "vue/html-button-has-type": "off",
+    "vuejs-accessibility/click-events-have-key-events": "off",
+    "vuejs-accessibility/form-control-has-label": "off",
+    "vuejs-accessibility/label-has-for": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/prefer-as-const": "off",
+    "@typescript-eslint/func-call-spacing": [
+      "error"
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "comma",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi",
+          "requireLast": false
+        }
+      }
+    ],
+    "@typescript-eslint/type-annotation-spacing": [
+      "error",
+      {
+        "after": true
+      }
+    ],
+    "vue/multi-word-component-names": "off",
+    "vue/attribute-hyphenation": "off",
+    "vue/attributes-order": [
+      "error",
+      {
+        "order": [
+          "DEFINITION",
+          "LIST_RENDERING",
+          "CONDITIONALS",
+          "RENDER_MODIFIERS",
+          "GLOBAL",
+          [
+            "UNIQUE",
+            "SLOT"
+          ],
+          "TWO_WAY_BINDING",
+          "OTHER_DIRECTIVES",
+          "OTHER_ATTR",
+          "EVENTS",
+          "CONTENT"
+        ],
+        "alphabetical": false
+      }
+    ],
+    "vue/html-indent": [
+      "error",
+      2,
+      {
+        "attribute": 1,
+        "baseIndent": 1,
+        "closeBracket": 0,
+        "alignAttributesVertically": true,
+        "ignores": []
+      }
+    ],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 1
+        },
+        "multiline": {
+          "max": 1
+        }
+      }
+    ],
+    "vue/singleline-html-element-content-newline": [
+      "error",
+      {
+        "ignoreWhenNoAttributes": true,
+        "ignoreWhenEmpty": false
+      }
+    ],
+    "vue/multiline-html-element-content-newline": [
+      "error",
+      {
+        "ignoreWhenEmpty": true,
+        "allowEmptyLines": false
+      }
+    ],
+    "vue/html-closing-bracket-newline": [
+      "error",
+      {
+        "singleline": "never",
+        "multiline": "always"
+      }
+    ],
+    "vue/html-closing-bracket-spacing": [
+      "error",
+      {
+        "startTag": "never",
+        "endTag": "never",
+        "selfClosingTag": "never"
+      }
+    ],
+    "vue/no-spaces-around-equal-signs-in-attribute": [
+      "error"
+    ],
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "component": "always"
+        },
+        "svg": "always",
+        "math": "always"
+      }
+    ],
+    "vue/v-bind-style": [
+      "error",
+      "shorthand"
+    ],
+    "vue/v-on-style": [
+      "error",
+      "shorthand"
+    ],
+    "vue/component-tags-order": [
+      "error",
+      {
+        "order": [
+          "template",
+          "script",
+          "style"
+        ]
+      }
+    ],
+    "vue/component-api-style": [
+      "error",
+      [
+        "script-setup"
+      ]
+    ],
+    "vue/padding-line-between-blocks": [
+      "error"
+    ],
+    "vue/first-attribute-linebreak": [
+      "error",
+      {
+        "singleline": "beside",
+        "multiline": "below"
+      }
+    ],
+    "vue/no-setup-props-destructure": [
+      "off"
+    ],
+    "newline/import-module": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    "newline/object-property": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "alphabetize": {
+          "order": "desc"
+        }
+      }
+    ],
+    "array-bracket-newline": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    "array-element-newline": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "multiline": true,
+          "minProperties": 1
+        },
+        "ObjectPattern": {
+          "multiline": true,
+          "minProperties": 2
+        },
+        "ImportDeclaration": {
+          "multiline": true,
+          "minProperties": 2
+        },
+        "ExportDeclaration": {
+          "multiline": true,
+          "minProperties": 2
+        }
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 200
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/containers/**/*.test.{j,t}s?(x)"
+      ],
+      "env": {
+        "jest": true
+      }
+    },
+    {
+      "files": [
+        "src/**/*.vue"
+      ],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": [
+              "variable",
+              "function"
+            ],
+            "format": [
+              "camelCase"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
